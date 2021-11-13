@@ -1,0 +1,222 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0, rgba(33, 62, 70, 0.6), rgba(0, 0, 0, 0.6)), url(https://bytuong.com/wp-content/uploads/2021/04/Giai-thich-tai-sao-cho-lai-bo-nha-ra-di-by-tuong-com.jpeg);
+}
+
+.header {
+    margin: -8px;
+    height: 50px;
+    background-image: linear-gradient(0, #999, #333);
+}
+
+.nav__bars-btn {
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    margin: 10px 5px;
+    display: none;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.navbar__mobile {
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s;
+}
+
+.header__mobile {
+    margin-top: 30px;
+}
+
+.header__mobile-list {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 8px;
+    color: #333;
+    transition: opacity 0.3s ease;
+}
+
+.header__mobile-list:hover {
+    color: red;
+}
+
+.header__mobile-list:hover {
+    opacity: 0.7;
+}
+
+.nav__mobile-close {
+    width: 20px;
+    height: 20px;
+    color: #666;
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+}
+
+.nav__input {
+    display: none;
+}
+
+.nav__input:checked~.nav__overlay {
+    display: block;
+}
+
+.nav__input:checked~.navbar__mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav__bars-btn {
+        display: block;
+    }
+    .header__menu {
+        display: none;
+    }
+}
+
+.header__mobile-list__items {
+    display: none;
+}
+
+.header__mobile-list__items:checked~.header__mobile-list__items-1 {
+    display: block;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: content;
+}
+
+.header__menu {
+    list-style: none;
+    cursor: pointer;
+}
+
+.header__menu-list {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 15px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 100px;
+    transition: opacity 0.3s ease;
+}
+
+.header__menu-list:hover {
+    color: #999;
+}
+
+.header__menu-list:hover {
+    opacity: 0.7;
+}
+
+.header__menu-list__itest {
+    width: 250px;
+    height: 165px;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333;
+    position: absolute;
+    display: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.header__menu-list__itest::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    display: block;
+    left: 0;
+    top: -12px;
+}
+
+.header__menu-list:hover .header__menu-list__itest {
+    display: block;
+}
+
+.header__menu-list__itest-sp {
+    margin-top: 15px;
+    list-style: none;
+}
+
+.header__menu-list__itest-1 {
+    text-decoration: none;
+    color: #333;
+}
+
+.header__menu-list__itest-1:hover {
+    color: red;
+}
+
+.header__menu-list__items {
+    width: 270px;
+    height: 270px;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333;
+    position: absolute;
+    display: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.header__menu-list__items::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    display: block;
+    left: 0;
+    top: -12px;
+}
+
+.header__menu-list:hover .header__menu-list__items {
+    display: block;
+}
+
+.header__menu-list__items-sp {
+    margin-top: 15px;
+    list-style: none;
+}
+
+.header__menu-list__items-1 {
+    text-decoration: none;
+    color: #333;
+}
+
+.header__menu-list__items-1:hover {
+    color: red;
+}
