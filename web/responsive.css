@@ -1,0 +1,39 @@
+/* PC */
+
+@media (min-width:1024px) {}
+
+
+/* TABLET */
+
+@media (max-width:900px) {
+    .posts,
+    .right_part {
+        width: 100%;
+    }
+    .mobile {
+        display: block;
+    }
+    .tp1 {
+        flex-direction: column;
+    }
+    .title2 {
+        display: none;
+    }
+    .titlec {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .title1 {
+        margin-top: -80px;
+        width: 1000px;
+        text-align: center;
+    }
+    .logo {
+        text-align: center;
+    }
+    .search-mobile {
+        display: block;
+    }
+}
