@@ -31,6 +31,7 @@
 
 .tab-items>a {
     text-decoration: none;
+    color: #111;
 }
 
 .tab-document {
