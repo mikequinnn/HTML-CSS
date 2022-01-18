@@ -1,12 +1,13 @@
 .tabs {
     width: 500px;
     margin: 50px auto;
-    border: solid 1px #333;
+    border: solid 1px #666;
 }
 
 .tablink {
-    background-color: #fab1a0;
-    color: black;
+    background-color: #95a5a6;
+    color: #111;
+    font-weight: bold;
     float: left;
     outline: none;
     cursor: pointer;
@@ -15,6 +16,25 @@
     width: 25%;
 }
 
+.tablink:hover {
+    background-color: #777;
+}
+
+.tab-content {
+    background-color: #ecf0f1;
+}
+
+.tab-items {
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.tab-items>a {
+    text-decoration: none;
+}
+
 .tab-document {
+    vertical-align: top;
     display: none;
+    font-size: 20px;
 }
